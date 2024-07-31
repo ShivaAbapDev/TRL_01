@@ -1,0 +1,11 @@
+@EndUserText.label: 'ZC_RAP_TRAVEL_GSP'
+@MappingRole: true
+define role ZC_RAP_TRAVEL_GSP {
+    grant
+        select
+            on
+                ZC_RAP_TRAVEL_GSP
+                    where
+                        inheriting conditions from entity zi_rap_travel_gsp;
+                        
+}

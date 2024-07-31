@@ -1,0 +1,15 @@
+@EndUserText.label: 'Access control View for Travel root interface view'
+@MappingRole: true
+define role ZI_RAP_TRAVEL_GSP {
+    grant
+        select
+            on
+                ZI_RAP_TRAVEL_GSP
+                    where
+//                        ( OverallStatus ) = 
+//                            aspect pfcg_auth( ZAOSTATGSP, ZAFSTATGSP, ACTVT = '03')
+//                            and
+//                            CurrencyCode = 'USD';
+                        true;
+                        
+}
