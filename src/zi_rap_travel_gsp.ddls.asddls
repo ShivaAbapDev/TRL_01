@@ -24,7 +24,7 @@ define root view entity ZI_RAP_travel_gsp
       last_changed_by       as LastChangedBy,
       last_changed_at       as LastChangedAt,
       local_last_changed_at as LocalLastChangedAt,
-      _Booking, // Make association public
+      _Booking,// Make association public
       _Agency,
       _Customer,
       _Currency
