@@ -28,7 +28,10 @@ define root view entity ZC_RAP_TRAVEL_GSP
       CurrencyCode,
       @Search.defaultSearchElement: true
       Description,
+      @ObjectModel.text.element: ['OverallStatuText']
       OverallStatus,
+      _TravelStat.text   as OverallStatuText,
+      OverallStatus1,
       CreatedBy,
       CreatedAt,
       LastChangedBy,
@@ -38,5 +41,6 @@ define root view entity ZC_RAP_TRAVEL_GSP
       _Agency,
       _Booking : redirected to composition child ZC_RAP_BOOKING_GSP,
       _Currency,
-      _Customer
+      _Customer,
+      _TravelStat
 }

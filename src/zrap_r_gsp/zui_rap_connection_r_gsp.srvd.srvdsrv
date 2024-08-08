@@ -1,4 +1,5 @@
 @EndUserText.label: 'SD for Flight read only'
+@AbapCatalog.extensibility.extensible: true
 define service ZUI_RAP_CONNECTION_R_GSP {
   expose zi_rap_connection_r;
   expose ZI_RAP_GSP_Flight_R;

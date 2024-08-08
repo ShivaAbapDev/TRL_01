@@ -23,7 +23,7 @@
        <SERVICE_CONTENT>
         <item>
          <SERVICE_VERSION>0001</SERVICE_VERSION>
-         <RELEASE_STATE>NOT_RELEASED</RELEASE_STATE>
+         <RELEASE_STATE>RELEASED</RELEASE_STATE>
          <SRVD_REF>
           <URI>/sap/bc/adt/ddic/srvd/sources/zui_rap_connection_r_gsp</URI>
           <TYPE>SRVD/SRV</TYPE>

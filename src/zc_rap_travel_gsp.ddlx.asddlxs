@@ -3,7 +3,13 @@
 @UI: {
     headerInfo:{ typeName: 'Travel',
                  typeNamePlural: 'Travels',
-                 title: { type:#STANDARD, label: 'Travel', value: 'TravelId' } },
+                 title: {
+                            type:  #STANDARD,
+                            label: 'Travel',
+                            value: 'TravelId',
+                            criticalityRepresentation: #WITH_ICON,
+                            criticality: 'OverallStatus1',
+                            targetElement: 'TravelId' } },
     presentationVariant: [{ sortOrder: [{ by: 'TravelId', direction: #DESC }] }] }
 
 annotate entity ZC_RAP_TRAVEL_GSP with
@@ -19,7 +25,7 @@ annotate entity ZC_RAP_TRAVEL_GSP with
                     label:      'Booking',
                     position:   20,
                     targetElement:   '_Booking' } ]
-                    
+
 
 
   @UI:{ identification: [{ position: 1, label: 'Travel UUID' }] }
@@ -59,15 +65,17 @@ annotate entity ZC_RAP_TRAVEL_GSP with
           identification: [ { position: 80 } ] }
   Description;
 
-  @UI: {  lineItem:       [ { position: 90 },
+  @UI: {  lineItem:       [ { position: 90, importance: #HIGH  , criticality: 'OverallStatus1'},
                             { type: #FOR_ACTION, dataAction: 'acceptTravel', label: 'Accept Travel' },
                             { type: #FOR_ACTION, dataAction: 'rejectTravel', label: 'Reject Travel' }
                           ],
-          identification: [ { position: 90 },
+          identification: [ { position: 90,  importance: #HIGH  , criticality: 'OverallStatus1' },
                             { type: #FOR_ACTION, dataAction: 'acceptTravel', label: 'Accept Travel' },
                             { type: #FOR_ACTION, dataAction: 'rejectTravel', label: 'Reject Travel' }
                           ] }
   OverallStatus;
+
+
 
   @UI.hidden: true
   LastChangedAt;
